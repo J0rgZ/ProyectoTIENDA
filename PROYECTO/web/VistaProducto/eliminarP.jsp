@@ -1,0 +1,43 @@
+<%-- 
+    Document   : eliminarE
+    Created on : 5 oct 2023, 17:43:00
+    Author     : HP
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<%
+    String idproducto = request.getParameter("idproducto");
+
+    Connection con = null;
+    PreparedStatement ps = null;
+
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
+        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbtienda", "root", "");
+
+        // Preparar la consulta para eliminar el producto
+        ps = con.prepareStatement("DELETE FROM tbproducto WHERE idproducto=?");
+        ps.setString(1, idproducto);
+
+        // Ejecutar la consulta
+        int rowsAffected = ps.executeUpdate();
+
+        if (rowsAffected > 0) {
+            session.setAttribute("mensaje", "Producto eliminado correctamente.");
+        } else {
+            session.setAttribute("mensajeError", "Error al eliminar el producto.");
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    } finally {
+        try {
+            if (ps != null) ps.close();
+            if (con != null) con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    response.sendRedirect("index.jsp");
+%>

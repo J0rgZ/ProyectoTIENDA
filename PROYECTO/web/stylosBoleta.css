@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.boleta {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.info-cliente, .info-empleado, .fecha-hora, .total {
+    margin-bottom: 20px;
+}
+
+.info-cliente p, .info-empleado p, .fecha-hora p, .total p {
+    margin: 0;
+    color: #555;
+}
+
+.info-cliente strong, .info-empleado strong, .fecha-hora strong, .total strong {
+    font-weight: bold;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.empresa {
+    text-align: center;
+}
+
+.nombre-empresa, .ruc {
+    margin: 0;
+}
+
+.info-empresa {
+    text-align: center;
+    margin-bottom: 20px;
+}

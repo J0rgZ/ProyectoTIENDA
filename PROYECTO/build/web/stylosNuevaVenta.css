@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1500px;
+    display: flex;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.detail-section {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#detalleBoleta {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#detalleBoleta th,
+#detalleBoleta td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#detalleBoleta th {
+    background-color: #f5f5f5;
+}
+
+#detalleBoleta td button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#detalleBoleta td button.editar {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+}
+
+#detalleBoleta td button.eliminar {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+}
+
+.btn-add {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+

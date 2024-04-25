@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+.add-button, .edit-button, .delete-button, .return-button {
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.edit-button {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.edit-button:hover {
+    background-color: #1e87db;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #ea4335;
+}
+
+.return-button {
+    background-color: black;
+    color: #fff;
+}
+
+.return-button:hover {
+    background-color: #333;
+}
+
+.mensaje-flotante, .mensaje-flotante-error {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.mensaje-flotante {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.mensaje-flotante-error {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.pdf-button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pdf-button:hover {
+    background-color: #f57c00;
+}
+
+.boton-descarga {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
